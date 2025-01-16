@@ -1,0 +1,265 @@
+
+/* @import url("http://"); */ 
+/* Подключение шрифта */
+
+/* Обнуление стилей */
+*,
+*::before *::after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+ 
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+html,body {
+    height: 100%;
+}
+
+/* По умолчанию 16 рх */
+html {
+    font-size: 16px;
+}
+
+body {
+  line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  background-color: #f5f5f5;
+} 
+ 
+.wrapper {
+    min-height: 100%;  
+    overflow: hidden;
+    padding: 50px;
+
+    /* Для wrapper ставим 
+    display: flex;
+    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
+}
+
+/* .........lesson 15........ */
+.header {
+    background-color: #4b4b4b;
+    padding: 1px;
+}
+ 
+.main {
+    flex-grow: 1;
+}
+
+/* [] Такие скобки запрашивают определённую часть с класса для применения какихто стилей */
+[class*="__conteiner"]{
+box-sizing: content-box;
+max-width: 1020px;
+margin: 0px auto;
+padding: 0px 15px;
+}
+
+.titles *:not(:last-child) {
+    margin: 0px 0px 33px 0px ;
+}
+
+.titles__label {
+    padding: 0px 0px 0px 35px;
+    background: url(../img/Overline\ Mark\ \(1\).svg) 0 -2px no-repeat;
+font-weight: 700;
+font-size: 12px;
+line-height: 200%; 
+color: #5d62b5;
+letter-spacing: 2.5px;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.titles__item {
+    font-family: "Roboto", sans-serif;
+font-weight: 900;
+font-size: 36px;
+line-height: 42px; 
+color: #000;
+}
+
+.promise {
+    padding: 50px 0;
+}
+
+.promise__header {
+    margin: 0px 0p 68px 0px ;
+}
+
+.promise__items {
+    display: flex;
+    margin: 0px -12px;
+}
+ 
+.promise__item {
+    padding: 0px 12px;
+    flex: 0 0 33.333%;
+}
+ 
+.item-promise {
+    display: flex;
+    /* Прижимаем элементы вверх */
+    align-items: flex-start;
+}
+
+.item-promise__icon {
+    /* Запретить умньшаться, увеличиваться и задаем размер (в данном случае иконки) */
+    flex: 0 0 63px;
+}
+.item-promise__body {
+    padding: 0px 0px 0px 23px;
+}
+
+
+.item-promise__title:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+/* --------------- */
+
+
+.item-title {
+    margin: 0px 0px 20px 0px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 19px;
+    line-height: 26px; 
+    color: #f2726f;
+}
+
+.item-text {
+    font-family: "Roboto", sans-serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.01em;
+color: #4b4b4b;
+text-align: center;
+}
+
+
+/* -------------- */
+
+
+.services {
+  
+    
+}
+.services__container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.services__header {
+    margin: 0px 0px 74px 0px;
+}
+
+.services__items {
+    display: flex; 
+    row-gap: 24px ;
+    flex-wrap: wrap;
+    margin: 0px -24px;
+     
+ 
+}
+
+.services__items:not(:last-child){
+    margin: 0px 0px 66px 0px;
+}
+
+
+.services__item {
+    display: flex;
+    flex: 1 1 33.333%;
+    min-width: 300px;
+
+}
+
+.item__services {
+    width: 325px;
+    height: 280px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 50px 44px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+
+.item__services-icon {
+    /* flex уже высота, width ширина */
+    flex: 0 0 63px;
+    width: 63px;
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.item__services-icon img {
+max-width: 100%;
+}
+
+.item__services-icon:not(:last-child){
+    margin: 0px 0px 33px 0px;
+}
+
+
+.item-services__title:not(:last-child){
+    margin: 0px 0px 20px 0px;
+}
+
+.services__footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+.services__button {
+    align-self: center;
+    max-width: 124px;
+    max-height: 48px;
+border-radius: 8px;
+background: #f2726f;
+color: white;
+text-transform: uppercase;
+font-weight: 700;
+font-size: 12px;
+line-height: 2;
+text-decoration: none;
+padding: 15px 25px;
+margin: 66px 0px 0px 0px ;
+}
+
